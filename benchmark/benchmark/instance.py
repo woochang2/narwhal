@@ -17,8 +17,8 @@ class AWSError(Exception):
 
 
 class InstanceManager:
-    INSTANCE_NAME = 'dag-node'
-    SECURITY_GROUP_NAME = 'dag'
+    INSTANCE_NAME = 'narwhal'
+    SECURITY_GROUP_NAME = 'launch-wizard-6'
 
     def __init__(self, settings):
         assert isinstance(settings, Settings)

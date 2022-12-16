@@ -17,8 +17,8 @@ class AWSError(Exception):
 
 
 class InstanceManager:
-    INSTANCE_NAME = 'narwhal'
-    SECURITY_GROUP_NAME = 'launch-wizard-6'
+    INSTANCE_NAME = 'dag-node'
+    SECURITY_GROUP_NAME = 'dag'
 
     def __init__(self, settings):
         assert isinstance(settings, Settings)
@@ -110,7 +110,7 @@ class InstanceManager:
         response = client.describe_images(
             Filters=[{
                 'Name': 'description',
-                'Values': ['Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2020-10-26']
+                'Values': ['Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-12-01']
             }]
         )
         return response['Images'][0]['ImageId']

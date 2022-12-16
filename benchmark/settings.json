@@ -1,7 +1,7 @@
 {
     "key": {
-        "name": "aws",
-        "path": "/home/user/keys_donottouch/cloudtest.pem"
+        "name": "cloudtest",
+        "path": "/home/user/.ssh/cloudtest.pem"
     },
     "port": 5000,
     "repo": {
